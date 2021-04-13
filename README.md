@@ -2,7 +2,7 @@
 ####详细了解：http://meeting.unicloud.com/
 ####如何使用
 #####1、将uniwebrtc.aar、unirtcsdk.aar、unirtcuikit.aar三个包导入开发工程
-![Alt text](./https://maxiang.io/bde15ddf-7a29-4cd4-ab76-2a8c3875c7b9)
+![avatar](https://github.com/uniRTC/uniRTC-meeting-android/blob/main/img/1618285518910.png)
 blob:
 #####2、使用时添加相关的build.gradle 配置
 仅保留armeabi-v7a
