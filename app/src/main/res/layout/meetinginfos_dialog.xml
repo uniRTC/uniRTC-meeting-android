@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_meeting_info_dialog"
+    android:background="@drawable/shape_width_top_raduis_15_bg">
+
+    <TextView
+        android:id="@+id/txt_meetinginfo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="会议信息"
+        android:textColor="#333333"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/img_meetinginfo_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txt_meetinginfo_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:padding="6dp"
+        android:src="@mipmap/img_dialog_close"/>
+
+    <TextView
+        android:id="@+id/txt_meeting_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_meetinginfo_title"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="28dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_meeting_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_meeting_theme"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"
+        android:textColor="#333333"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/txt_meeting_time"
+        android:background="#D7D7D7"/>
+
+    <LinearLayout
+        android:id="@+id/ll_meetinginfo_meetid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_meeting_time"
+        android:orientation="horizontal"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="21dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="会议号"
+            android:textColor="#999999"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txt_meeting_meetroomid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:text="会议号"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_meetinginfo_copy"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_meetinginfo_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_meetinginfo_meetid"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="21dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发起人"
+            android:textColor="#999999"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txt_meeting_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:text="会议号"
+            android:textColor="#333333"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_meetinginfo_sipnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_meetinginfo_username"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="21dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话入会"
+            android:textColor="#999999"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txt_meeting_sipnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:text="会议号"
+            android:textColor="#333333"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_meetinginfo_invateurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_meetinginfo_sipnum"
+        android:orientation="horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="21dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请链接"
+            android:textColor="#999999"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txt_meeting_invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:text="12344543"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_meetinginfo_copy"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

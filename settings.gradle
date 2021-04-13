@@ -1,0 +1,5 @@
+include ':unirtcuikit'
+include ':unirtcsdk'
+include ':uniwebrtc'
+include ':app'
+rootProject.name = "UNIRTC"
